@@ -22,7 +22,7 @@ async({event}) => {
     await connectDB()
     await User.Create(userData)
 }
- )
+ )g
 
  //inngest function to update user data in database
  export const syncUserUpdation = inngest.createFunction(
