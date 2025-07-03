@@ -22,7 +22,7 @@ async({event}) => {
     await connectDB()
     await User.Create(userData)
 }
- )g
+ )
 
  //inngest function to update user data in database
  export const syncUserUpdation = inngest.createFunction(
@@ -48,7 +48,7 @@ async ({event}) => {
  )
 
  //inggest function to delete user from database
- export const synUserDeletion = inggest.createFunction(
+ export const synUserDeletion = inngest.createFunction(
     {
         id: 'delete-user-with-clerk'
     },
